@@ -1,6 +1,6 @@
-# Givi Laliashvili - Massage & Rehabilitation Website
+# Diaz Massges - Massage & Rehabilitation Website
 
-A professional website for Givi Laliashvili, a rehabilitation therapist based in Tbilisi, Georgia.
+A professional website for Johan Diaz, a rehabilitation therapist based in Bogotá, Colombia.
 
 **Live site:** [givi.laliashvili.ge](https://givi.laliashvili.ge/)
 
@@ -64,11 +64,11 @@ massage-rehab-website-givi/
 
 ## Contact
 
-- **Phone:** +995 593 788 626
+- **Phone:** +57 300 123 4567
 - **Facebook:** [givi.laliasshvili](https://www.facebook.com/givi.laliasshvili)
 - **Instagram:** [giko.laliashvili](https://www.instagram.com/giko.laliashvili/)
-- **WhatsApp:** [Message](https://wa.me/995593788626)
+- **WhatsApp:** [Message](https://wa.me/573001234567)
 
 ## License
 
-© 2025 Givi Laliashvili. All rights reserved.
+© 2026 Diaz Massges - Johan Diaz. All rights reserved.

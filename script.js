@@ -1,3 +1,61 @@
+// Spanish content for the Colombia version of the site.
+const spanishContent = {
+    '.service-card h3': ['Terapia Yumeiho', 'Kinesioterapia', 'Terapia manual', 'Terapia Jen-Ziu', 'Terapia de vacío', 'Acupresión', 'Acupuntura', 'Masaje infantil', 'Terapia para la escoliosis'],
+    '.service-card img': ['Terapia Yumeiho', 'Kinesioterapia', 'Terapia manual', 'Terapia Jen-Ziu', 'Terapia de vacío', 'Acupresión', 'Acupuntura', 'Masaje infantil', 'Terapia para la escoliosis'],
+    '.footer-col a': ['Terapia Yumeiho', 'Kinesioterapia', 'Terapia manual', 'Terapia Jen-Ziu', 'Terapia de vacío', 'Acupresión', 'Acupuntura', 'Masaje infantil', 'Terapia para la escoliosis']
+};
+
+Object.entries(spanishContent).forEach(([selector, values]) => {
+    document.querySelectorAll(selector).forEach((element, index) => {
+        if (values[index]) {
+            if (element.tagName === 'IMG') element.alt = values[index];
+            else element.textContent = values[index];
+        }
+    });
+});
+
+const serviceDescriptions = [
+    'Yumeiho es una terapia manual japonesa que combina shiatsu y técnicas de manipulación. Ayuda a recuperar el equilibrio corporal y se utiliza para problemas de columna y articulaciones, así como para el estrés y la fatiga crónica.',
+    'Tratamiento mediante ejercicios físicos que incluye equilibrio, coordinación, ejercicios activos, pasivos y con resistencia. También integra ejercicios respiratorios, taichí, yoga y terapias acuáticas.',
+    'Método terapéutico para corregir alteraciones de la columna, las articulaciones y el sistema muscular, y favorecer la movilidad y el bienestar.',
+    'Método ancestral de reflexoterapia de la medicina china que estimula puntos biológicamente activos y puede apoyar el tratamiento de problemas neurológicos y musculoesqueléticos.',
+    'Masaje terapéutico preventivo que utiliza ventosas para estimular la circulación, mejorar la movilidad y aliviar la tensión muscular.',
+    'Método de la medicina tradicional china que aplica presión sobre puntos específicos para aliviar la tensión y mejorar la circulación.',
+    'Técnica terapéutica con agujas que estimula puntos biológicamente activos y puede contribuir al bienestar y la prevención.',
+    'El masaje infantil favorece el desarrollo, la postura y el bienestar del bebé. Combinado con ejercicios suaves, acompaña su crecimiento saludable.',
+    'Tratamiento integral para acompañar la postura y la movilidad en casos de desviación de la columna, con ejercicios adaptados a cada paciente.'
+];
+document.querySelectorAll('.service-card p').forEach((element, index) => {
+    if (serviceDescriptions[index]) element.textContent = serviceDescriptions[index];
+});
+
+document.querySelectorAll('.testimonial-item p').forEach((element, index) => {
+    const testimonials = [
+        'Terapeuta profesional que me ayudó a aliviar el dolor de espalda. ¡Lo recomiendo!',
+        'La terapia Yumeiho cambió mi vida. El dolor crónico desapareció después de varias sesiones.',
+        'Excelente especialista en Bogotá. ¡Gracias por tu profesionalismo!',
+        'Después del tratamiento de acupuntura, los dolores de cabeza desaparecieron. ¡Estoy muy satisfecho!',
+        'Mi hijo recibe terapia para la escoliosis y el resultado es evidente. ¡Muchas gracias!',
+        'La terapia manual me ayudó a aliviar el dolor de cuello. ¡La recomiendo!'
+    ];
+    if (testimonials[index]) element.textContent = testimonials[index];
+});
+document.querySelectorAll('.testimonial-author strong').forEach((element, index) => {
+    element.textContent = ['Nina M.', 'Jorge C.', 'Mariana B.', 'Ana D.', 'Tatiana L.', 'David S.'][index];
+});
+document.querySelectorAll('.testimonial-author span').forEach(element => {
+    element.textContent = 'Paciente';
+});
+
+const contactTitle = document.querySelector('.contact-info h2');
+const contactText = document.querySelector('.contact-info p');
+const contactButton = document.querySelector('.contact-info .btn');
+const whatsappTooltip = document.querySelector('.whatsapp-tooltip');
+if (contactTitle) contactTitle.textContent = '¿Tienes preguntas?';
+if (contactText) contactText.textContent = 'Contáctame y recibe una consulta inicial';
+if (contactButton) contactButton.textContent = 'Solicitar consulta';
+if (whatsappTooltip) whatsappTooltip.textContent = 'Contáctame';
+
 // ===== Navigation Scroll Effect =====
 const navbar = document.querySelector('.navbar');
 const navToggle = document.querySelector('.nav-toggle');

@@ -130,6 +130,15 @@ a {
     width: auto;
 }
 
+.brand-logo {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
 .nav-menu {
     display: flex;
     gap: 50px;
@@ -843,6 +852,10 @@ a {
 .footer-logo-section .logo img {
     filter: brightness(0) invert(1);
     -webkit-filter: brightness(0) invert(1);
+}
+
+.footer .brand-logo {
+    color: var(--color-paper);
 }
 
 .footer-icons {
