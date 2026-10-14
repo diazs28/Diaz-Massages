@@ -78,6 +78,45 @@
   );
   document.querySelectorAll('.revelar').forEach((el) => observador.observe(el));
 
+  // Carrusel de comentarios: se mueve deslizando (táctil o arrastrando con el mouse), sin flechas
+  const carrusel = document.querySelector('[data-carrusel]');
+  const puntos = document.querySelector('[data-puntos]');
+  const tarjetas = [...carrusel.children];
+  tarjetas.forEach(() => puntos.append(document.createElement('span')));
+  function marcarActivo() {
+    const i = Math.round(carrusel.scrollLeft / carrusel.clientWidth);
+    tarjetas.forEach((t, j) => t.classList.toggle('activo', j === i));
+    [...puntos.children].forEach((p, j) => p.classList.toggle('activo', j === i));
+  }
+  carrusel.addEventListener('scroll', () => requestAnimationFrame(marcarActivo), { passive: true });
+  marcarActivo();
+
+  let origenX = 0;
+  let origenScroll = 0;
+  carrusel.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    origenX = e.clientX;
+    origenScroll = carrusel.scrollLeft;
+    carrusel.classList.add('arrastrando');
+    carrusel.setPointerCapture(e.pointerId);
+  });
+  carrusel.addEventListener('pointermove', (e) => {
+    if (carrusel.classList.contains('arrastrando'))
+      carrusel.scrollLeft = origenScroll - (e.clientX - origenX);
+  });
+  const soltar = (e) => {
+    if (!carrusel.classList.contains('arrastrando')) return;
+    carrusel.classList.remove('arrastrando');
+    // Se asienta en el comentario más cercano según la dirección del gesto
+    const delta = origenX - e.clientX;
+    const base = Math.round(origenScroll / carrusel.clientWidth);
+    const destino = Math.abs(delta) > 50 ? base + Math.sign(delta) : base;
+    const limite = Math.min(tarjetas.length - 1, Math.max(0, destino));
+    carrusel.scrollTo({ left: limite * carrusel.clientWidth, behavior: reducido ? 'auto' : 'smooth' });
+  };
+  carrusel.addEventListener('pointerup', soltar);
+  carrusel.addEventListener('pointercancel', soltar);
+
   // Cabecera compacta y eje de la trayectoria que se dibuja con el scroll
   const cabecera = document.querySelector('[data-cabecera]');
   const linea = document.querySelector('[data-linea-tiempo]');
