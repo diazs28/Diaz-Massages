@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-labelledby="t">
+  <title id="t">Ilustración de una persona haciendo un estiramiento con las articulaciones iluminadas</title>
+  <defs>
+    <linearGradient id="ropa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4fe3c1"/>
+      <stop offset="1" stop-color="#1f8f9a"/>
+    </linearGradient>
+    <linearGradient id="pantalon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b3f52"/>
+      <stop offset="1" stop-color="#0f2836"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4fe3c1" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#4fe3c1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="brillo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <style>
+    .orbita{fill:none;stroke:#7aa8ff;stroke-opacity:.35;stroke-width:1.2;stroke-dasharray:2 10;transform-origin:210px 260px;animation:girar 40s linear infinite}
+    .orbita.b{stroke:#4fe3c1;stroke-dasharray:60 16 4 16;animation-duration:60s;animation-direction:reverse}
+    .cuerpo{transform-origin:200px 420px;animation:respirar 5s ease-in-out infinite}
+    .nodo{fill:#eafff9}
+    .pulso{fill:url(#halo);transform-box:fill-box;transform-origin:center;animation:latir 2.4s ease-in-out infinite}
+    .pulso:nth-of-type(2n){animation-delay:.6s}
+    .pulso:nth-of-type(3n){animation-delay:1.2s}
+    .columna{fill:none;stroke:#eafff9;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1 9;opacity:.9}
+    .flujo{fill:none;stroke:#4fe3c1;stroke-width:2;stroke-linecap:round;stroke-dasharray:40 400;animation:fluir 3.5s linear infinite;filter:url(#brillo)}
+    @keyframes girar{to{transform:rotate(360deg)}}
+    @keyframes respirar{50%{transform:rotate(-1.2deg) translateY(-3px)}}
+    @keyframes latir{0%,100%{transform:scale(.6);opacity:.35}50%{transform:scale(1.25);opacity:1}}
+    @keyframes fluir{from{stroke-dashoffset:440}to{stroke-dashoffset:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+
+  <ellipse class="orbita" cx="210" cy="260" rx="190" ry="190"/>
+  <ellipse class="orbita b" cx="210" cy="260" rx="150" ry="150"/>
+  <ellipse cx="200" cy="440" rx="150" ry="14" fill="#4fe3c1" opacity=".12"/>
+
+  <g class="cuerpo" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Pierna de atrás -->
+    <path d="M188 268 L132 352 L72 420" stroke="url(#pantalon)" stroke-width="32"/>
+    <path d="M72 420 L46 426" stroke="#eafff9" stroke-width="14"/>
+    <!-- Brazo de atrás apoyado en la cadera -->
+    <path d="M200 156 L160 204 L182 252" stroke="#f0c2a2" stroke-width="18"/>
+    <path d="M200 156 L176 186" stroke="url(#ropa)" stroke-width="24"/>
+    <!-- Torso -->
+    <path d="M206 140 Q 200 200 192 262" stroke="url(#ropa)" stroke-width="50"/>
+    <!-- Pierna de adelante (zancada) -->
+    <path d="M196 262 L268 318 L276 420" stroke="url(#pantalon)" stroke-width="32"/>
+    <path d="M276 420 L306 424" stroke="#eafff9" stroke-width="14"/>
+    <!-- Brazo levantado -->
+    <path d="M212 150 L252 96 L272 40" stroke="#f0c2a2" stroke-width="18"/>
+    <path d="M212 150 L240 112" stroke="url(#ropa)" stroke-width="24"/>
+    <!-- Cuello y cabeza -->
+    <path d="M208 128 L210 112" stroke="#f0c2a2" stroke-width="16"/>
+    <circle cx="214" cy="88" r="27" fill="#f0c2a2" stroke="none"/>
+    <path d="M190 84 Q 196 56 224 60 Q 246 66 240 92 Q 232 74 214 76 Q 200 78 190 84 Z" fill="#14303f" stroke="none"/>
+    <circle cx="246" cy="72" r="10" fill="#14303f" stroke="none"/>
+
+    <!-- Columna y flujo de energía -->
+    <path class="columna" d="M208 120 Q 202 196 192 262"/>
+    <path class="flujo" d="M272 40 L252 96 L212 150 Q 202 206 194 262 L268 318 L276 420"/>
+  </g>
+
+  <!-- Articulaciones -->
+  <g>
+    <circle class="pulso" cx="252" cy="96" r="16"/>
+    <circle class="pulso" cx="212" cy="150" r="16"/>
+    <circle class="pulso" cx="192" cy="262" r="18"/>
+    <circle class="pulso" cx="268" cy="318" r="18"/>
+    <circle class="pulso" cx="132" cy="352" r="16"/>
+    <circle class="pulso" cx="160" cy="204" r="14"/>
+    <circle class="nodo" cx="252" cy="96" r="4"/>
+    <circle class="nodo" cx="212" cy="150" r="4"/>
+    <circle class="nodo" cx="192" cy="262" r="5"/>
+    <circle class="nodo" cx="268" cy="318" r="5"/>
+    <circle class="nodo" cx="132" cy="352" r="4"/>
+    <circle class="nodo" cx="160" cy="204" r="3.5"/>
+  </g>
+</svg>

@@ -1,74 +1,41 @@
-# Givi Laliashvili - Massage & Rehabilitation Website
+# Portafolio para fisioterapeutas
 
-A professional website for Givi Laliashvili, a rehabilitation therapist based in Tbilisi, Georgia.
+## Descripción
+Plantilla de una sola página para que un fisioterapeuta muestre su experiencia laboral, enfoques de tratamiento, formación y datos de contacto, con botón para descargar la hoja de vida. Incluye la pantalla de entrada (preloader) con el sello de BWL & SOFT.
 
-**Live site:** [givi.laliashvili.ge](https://givi.laliashvili.ge/)
+## Stack
+HTML + CSS + JavaScript sin dependencias ni proceso de compilación. Ilustraciones animadas en SVG propias (`assets/`).
 
-## Overview
+## Requisitos
+Un navegador moderno. Para verlo en local: Node 22+ (solo para el servidor estático).
 
-A single-page, responsive website showcasing rehabilitation and massage therapy services. Built with vanilla HTML, CSS, and JavaScript featuring a Japanese-inspired (wabi-sabi) design aesthetic.
-
-## Features
-
-- **Responsive Design** - Mobile-first approach with breakpoints for tablet and desktop
-- **Japanese-Inspired UI** - Wabi-sabi color palette, elegant typography (Cormorant Garamond, Zen Kaku Gothic New)
-- **Interactive Elements**
-  - Smooth scroll navigation
-  - Parallax hero section
-  - Testimonials slider with auto-play
-  - Image lightbox
-  - Magnetic button effects
-  - Scroll animations
-- **WhatsApp Integration** - Floating contact button
-- **SEO Optimized** - Meta tags, Open Graph, structured data (JSON-LD), sitemap
-
-## Services Offered
-
-1. Yumeiho Therapy (Japanese manual therapy)
-2. Kinesiotherapy
-3. Manual Therapy
-4. Jen-Ziu Therapy (Chinese medicine)
-5. Vacuum Therapy
-6. Acupressure
-7. Acupuncture
-8. Infant Massage
-9. Scoliosis Therapy
-
-## Project Structure
-
-```
-massage-rehab-website-givi/
-├── index.html          # Main HTML file
-├── style.css           # Stylesheet (1500+ lines)
-├── script.js           # JavaScript functionality
-├── robots.txt          # SEO robots file
-├── sitemap.xml         # XML sitemap
-├── cv/                 # CV/Resume PDF
-│   └── givilalishvili.pdf
-└── images/
-    ├── assets/         # Icons, logos, service images
-    └── ...             # Other images
+## Instalación
+```bash
+npx serve -l 5502 .
 ```
 
-## Tech Stack
+## Variables de entorno
+No usa.
 
-- HTML5
-- CSS3 (Custom properties, Grid, Flexbox, Animations)
-- Vanilla JavaScript (ES6+)
-- Google Fonts
+## Personalizar para un cliente
+1. `js/config.js`: nombre, WhatsApp, teléfono, correo, Instagram, dirección y ruta de la hoja de vida.
+2. `index.html`: textos de perfil, enfoques, trayectoria, formación y testimonio; nombre del preloader y su año de inicio (`data-desde`).
+3. `cv/hoja-de-vida.pdf`: reemplazar por la hoja de vida del cliente.
+4. `assets/retrato.svg`: se puede cambiar por una foto real (mismo tamaño aproximado).
 
-## Browser Support
+## Estructura
+```
+index.html        página
+style.css         estilos, transiciones y preloader
+script.js         datos de marca, menú, revelado, contadores y línea de tiempo
+js/intro.js       control del preloader (va en el <head>)
+js/config.js      datos de marca del profesional
+assets/           ilustraciones SVG e ícono
+cv/               hoja de vida descargable
+```
 
-- Chrome, Firefox, Safari, Edge (modern versions)
-- Mobile browsers (iOS Safari, Chrome for Android)
+## Despliegue
+Vercel: importar el repositorio como proyecto estático (sin comando de build, directorio raíz `/`).
 
-## Contact
-
-- **Phone:** +995 593 788 626
-- **Facebook:** [givi.laliasshvili](https://www.facebook.com/givi.laliasshvili)
-- **Instagram:** [giko.laliashvili](https://www.instagram.com/giko.laliashvili/)
-- **WhatsApp:** [Message](https://wa.me/995593788626)
-
-## License
-
-© 2025 Givi Laliashvili. All rights reserved.
+## Seguridad
+Sitio estático sin formularios ni datos sensibles. Los enlaces externos usan `rel="noopener"`.

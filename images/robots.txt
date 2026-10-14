@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://givi.laliashvili.ge/sitemap.xml

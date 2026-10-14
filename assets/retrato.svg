@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" role="img" aria-labelledby="t">
+  <title id="t">Ilustración de la fisioterapeuta con uniforme clínico</title>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2a33"/>
+      <stop offset="1" stop-color="#123c46"/>
+    </linearGradient>
+    <linearGradient id="uniforme" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fe3c1"/>
+      <stop offset="1" stop-color="#1f8f9a"/>
+    </linearGradient>
+    <clipPath id="forma">
+      <path d="M200 10 C 310 10 390 80 390 200 C 390 330 320 430 200 430 C 80 430 10 340 10 210 C 10 90 90 10 200 10 Z"/>
+    </clipPath>
+  </defs>
+  <style>
+    .linea{fill:none;stroke:#4fe3c1;stroke-width:2;stroke-linecap:round;stroke-dasharray:6 300;animation:pulso 3s linear infinite}
+    .cabeza{transform-origin:200px 250px;animation:mirar 7s ease-in-out infinite}
+    @keyframes pulso{from{stroke-dashoffset:306}to{stroke-dashoffset:0}}
+    @keyframes mirar{50%{transform:rotate(2deg)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <g clip-path="url(#forma)">
+    <rect width="400" height="440" fill="url(#fondo)"/>
+    <!-- Electro de fondo -->
+    <path d="M0 150 H120 L136 120 L152 190 L168 100 L184 150 H400" fill="none" stroke="#7aa8ff" stroke-opacity=".25" stroke-width="2"/>
+    <path class="linea" d="M0 150 H120 L136 120 L152 190 L168 100 L184 150 H400"/>
+    <!-- Hombros y uniforme -->
+    <path d="M60 440 C 70 340 120 310 200 304 C 280 310 330 340 340 440 Z" fill="url(#uniforme)"/>
+    <path d="M168 306 L200 352 L232 306" fill="#f0c2a2"/>
+    <path d="M168 306 L200 352 L232 306" fill="none" stroke="#eafff9" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Bolsillo y bolígrafo -->
+    <path d="M250 372 h44 v34 h-44 z" fill="none" stroke="#eafff9" stroke-opacity=".5" stroke-width="3" rx="6"/>
+    <path d="M262 362 v22" stroke="#ff8a6b" stroke-width="5" stroke-linecap="round"/>
+    <!-- Cinta métrica al cuello -->
+    <path d="M150 312 C 140 360 150 410 160 440" fill="none" stroke="#ffd36b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M150 312 C 140 360 150 410 160 440" fill="none" stroke="#14303f" stroke-width="9" stroke-dasharray="1.5 7" stroke-opacity=".6"/>
+    <g class="cabeza">
+      <!-- Cuello -->
+      <path d="M182 250 v60 h36 v-60 z" fill="#e3b192"/>
+      <!-- Cabello de atrás -->
+      <path d="M128 190 C 120 110 170 82 206 84 C 262 86 290 130 280 200 C 276 250 268 290 252 300 L150 300 C 134 280 130 240 128 190 Z" fill="#14303f"/>
+      <!-- Cara -->
+      <ellipse cx="202" cy="196" rx="58" ry="70" fill="#f0c2a2"/>
+      <ellipse cx="144" cy="204" rx="10" ry="15" fill="#e3b192"/>
+      <!-- Flequillo -->
+      <path d="M142 176 C 146 120 196 108 236 120 C 258 128 268 150 262 172 C 240 150 200 142 142 176 Z" fill="#14303f"/>
+      <!-- Moño -->
+      <circle cx="232" cy="92" r="26" fill="#14303f"/>
+      <!-- Rasgos suaves -->
+      <path d="M176 200 q8 -6 16 0 M214 200 q8 -6 16 0" fill="none" stroke="#14303f" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M190 234 q13 10 26 0" fill="none" stroke="#b5654a" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="170" cy="222" r="9" fill="#ff8a6b" opacity=".25"/>
+      <circle cx="238" cy="222" r="9" fill="#ff8a6b" opacity=".25"/>
+    </g>
+  </g>
+  <path d="M200 10 C 310 10 390 80 390 200 C 390 330 320 430 200 430 C 80 430 10 340 10 210 C 10 90 90 10 200 10 Z" fill="none" stroke="#4fe3c1" stroke-opacity=".4" stroke-width="1.5"/>
+</svg>
