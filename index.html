@@ -1,393 +1,269 @@
-<!DOCTYPE html>
-<html lang="ka">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Valeria Castaño · Fisioterapeuta en Popayán</title>
+    <meta
+      name="description"
+      content="Fisioterapeuta con más de 8 años de experiencia en rehabilitación deportiva, dolor de espalda y recuperación neuromuscular. Conoce su trayectoria y agenda tu valoración."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="Valeria Castaño · Fisioterapeuta" />
+    <meta
+      property="og:description"
+      content="Rehabilitación deportiva, dolor de espalda y recuperación neuromuscular. Trayectoria y contacto."
+    />
+    <meta name="theme-color" content="#050f14" />
+    <link rel="icon" href="assets/icono.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/intro.js"></script>
+    <script src="js/config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Preloader sello BWL & SOFT: solo se ve si js/intro.js activa la clase "bwl-intro" en <html> -->
+    <div class="bwl-entrada" data-bwl-entrada aria-hidden="true">
+      <div class="bwl-entrada__fondo"></div>
+      <div class="bwl-entrada__contenido">
+        <span class="bwl-entrada__contador" data-bwl-contador data-desde="2017">2017</span>
+        <p class="bwl-entrada__nombre">Valeria Castaño</p>
+        <span class="bwl-entrada__linea"></span>
+        <span class="bwl-entrada__lema">Fisioterapia · Rehabilitación · Popayán</span>
+      </div>
+      <div class="bwl-entrada__brillo"></div>
+      <div class="bwl-entrada__ola"></div>
+      <p class="bwl-entrada__sello" data-marca-texto="CREDITO_DESARROLLO">
+        Experiencia digital · BWL &amp; SOFT
+      </p>
+    </div>
 
-    <!-- SEO Meta Tags -->
-    <title>გივი ლალიაშვილი | მასაჟი და რეაბილიტაცია თბილისში</title>
-    <meta name="description" content="გივი ლალიაშვილი - პროფესიონალი რეაბილიტატორი თბილისში. იუმეიჰო თერაპია, მანუალური თერაპია, აკუპუნქტურა, კინეზითერაპია, ჩვილის მასაჟი და სქოლიოზის მკურნალობა. დაგვიკავშირდით უფასო კონსულტაციისთვის.">
-    <meta name="keywords" content="მასაჟი, რეაბილიტაცია, იუმეიჰო თერაპია, კინეზითერაპია, მანუალური თერაპია, ჯენ-ძიუ თერაპია, ვაკუუმ თერაპია, აკუპრესურა, აკუპუნქტურა, ჩვილის მასაჟი, სქოლიოზის თერაპია, მომსახურეობა, მასაჟი თბილისი, რეაბილიტატორი თბილისი, გივი ლალიაშვილი, ზურგის ტკივილი, კისრის ტკივილი">
-    <meta name="author" content="გივი ლალიაშვილი">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="O8_eCnyvtK0XKVi3Mchg_s-rZh1vHO4SZkNu8402c6w" />
-    <link rel="canonical" href="https://givi.laliashvili.ge/">
+    <div class="aura" aria-hidden="true"><span></span><span></span><span></span></div>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:url" content="https://givi.laliashvili.ge/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="გივი ლალიაშვილი | მასაჟი და რეაბილიტაცია თბილისში">
-    <meta property="og:description" content="პროფესიონალი რეაბილიტატორი თბილისში. იუმეიჰო თერაპია, მანუალური თერაპია, აკუპუნქტურა და სხვა მომსახურეობა.">
-    <meta property="og:image" content="images/assets/image1.jpg">
-    <meta property="og:locale" content="ka_GE">
+    <header class="cabecera" data-cabecera>
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">
+        <svg viewBox="0 0 40 20" aria-hidden="true">
+          <path d="M1 11h8l3-8 5 15 4-11 3 4h15" />
+        </svg>
+        <span>Valeria<b>Castaño</b></span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
+        <span></span><span></span><span class="sr">Abrir menú</span>
+      </button>
+      <nav id="menu" class="menu" data-menu>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#enfoques">Enfoques</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#formacion">Formación</a>
+        <a class="menu__cta" href="#contacto">Agendar</a>
+      </nav>
+    </header>
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="გივი ლალიაშვილი | მასაჟი და რეაბილიტაცია თბილისში">
-    <meta name="twitter:description" content="პროფესიონალი რეაბილიტატორი თბილისში. იუმეიჰო თერაპია, მანუალური თერაპია, აკუპუნქტურა და სხვა მომსახურეობა.">
-    <meta name="twitter:image" content="images/assets/image1.jpg">
-
-    <!-- Geo Tags -->
-    <meta name="geo.region" content="GE">
-    <meta name="geo.placename" content="Tbilisi">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="images/assets/Group%2031.svg">
-    <link rel="apple-touch-icon" href="images/assets/Group%2031.svg">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- Structured Data for Local Business -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "HealthAndBeautyBusiness",
-        "name": "გივი ლალიაშვილი - რეაბილიტატორი",
-        "description": "პროფესიონალი რეაბილიტატორი თბილისში. იუმეიჰო თერაპია, მანუალური თერაპია, აკუპუნქტურა, კინეზითერაპია.",
-        "telephone": "+995593788626",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "თბილისი",
-            "addressCountry": "GE"
-        },
-        "priceRange": "$$",
-        "openingHours": "Mo-Sa 09:00-19:00",
-        "sameAs": [
-            "https://www.facebook.com/givi.laliasshvili",
-            "https://www.instagram.com/giko.laliashvili/"
-        ]
-    }
-    </script>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <img src="images/assets/Group 31.svg" alt="Logo">
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="inicio">
+        <svg class="hero__electro" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0 120 H380 L410 120 L430 60 L455 175 L478 30 L500 140 L520 120 H760 L780 100 L800 120 H1200"
+          />
+        </svg>
+        <div class="hero__texto">
+          <p class="etiqueta" data-hero>Fisioterapeuta · Popayán</p>
+          <h1 class="hero__titulo" data-hero>
+            Movimiento que <em>sana</em>,<br />cuerpo que <em>recuerda</em>.
+          </h1>
+          <p class="hero__intro" data-hero>
+            Soy Valeria Castaño. Acompaño a deportistas, adultos y personas mayores a recuperar su
+            movilidad, aliviar el dolor y volver a hacer lo que aman, con tratamientos basados en
+            evidencia y un plan hecho a su medida.
+          </p>
+          <div class="hero__acciones" data-hero>
+            <a class="boton boton--lleno" data-marca="whatsapp" href="#contacto" target="_blank" rel="noopener">
+              Agendar valoración
             </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#home">მთავარი</a></li>
-                <li><a href="#about">ჩემ შესახებ</a></li>
-                <li><a href="#services">მომსახურეობა</a></li>
-                <li><a href="#contact">კონტაქტი</a></li>
-            </ul>
+            <a class="boton boton--linea" data-marca="hojaDeVida" href="cv/hoja-de-vida.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" /></svg>
+              Descargar hoja de vida
+            </a>
+          </div>
         </div>
-    </nav>
+        <div class="hero__figura" data-hero>
+          <img
+            src="assets/figura-movimiento.svg"
+            alt="Ilustración de una persona en un estiramiento con las articulaciones iluminadas"
+            width="420"
+            height="520"
+          />
+          <p class="hero__dato hero__dato--a"><b>8+</b> años de práctica clínica</p>
+          <p class="hero__dato hero__dato--b"><b>1.200+</b> pacientes acompañados</p>
+        </div>
+      </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="images/assets/image1.jpg" alt="გივი ლალიაშვილი">
-            </div>
-            <div class="hero-content">
-                <div class="hero-jp">癒し</div>
-                <h1>გივი ლალიაშვილი</h1>
-                <p class="hero-title">რეაბილიტატორი</p>
-                <p class="hero-text">ჩემი მიზანი არის ჩემს პაციენტებს, მაქსიმალურად დავეხმარო რეაბილიტაციაში.</p>
-                <a href="cv/givilalishvili.pdf" class="btn" download="გივი ლალიაშვილი.pdf">ჩამოტვირთე CV</a>
-            </div>
+      <!-- Sobre mí -->
+      <section class="sobre" id="sobre-mi">
+        <div class="sobre__retrato revelar">
+          <img src="assets/retrato.svg" alt="Ilustración de Valeria Castaño con uniforme clínico" width="400" height="440" loading="lazy" />
         </div>
-        <div class="scroll-line"></div>
-    </section>
+        <div class="sobre__texto">
+          <p class="etiqueta revelar">Sobre mí</p>
+          <h2 class="titulo revelar">Escucho al cuerpo antes de tratarlo.</h2>
+          <p class="revelar">
+            Cada lesión cuenta una historia distinta. Por eso empiezo con una valoración completa de tu
+            postura, tu fuerza y tu forma de moverte, y a partir de ahí diseñamos juntos un plan claro,
+            con metas que puedes medir semana a semana.
+          </p>
+          <p class="revelar">
+            Mi trabajo combina terapia manual, ejercicio terapéutico y educación para que no solo
+            mejores en consulta, sino que sepas cómo cuidarte en casa.
+          </p>
+          <ul class="cifras revelar">
+            <li><b data-contar="8">0</b><span>años de experiencia</span></li>
+            <li><b data-contar="1200" data-sufijo="+">0</b><span>pacientes atendidos</span></li>
+            <li><b data-contar="96" data-sufijo="%">0</b><span>recomiendan el tratamiento</span></li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="header-jp">ჩემ შესახებ</span>
-                <h2>განათლება და გამოცდილება</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-year">2009</span>
-                        <p>გავიარე თბილისი კუროლტოლოგიისა და ბალნეოლოგიური ინსტიტუტის სკოლა "ავანში" არსებული სამედიცინე მასაჟის 1წლიანი კურსი: მანუალური თერაპია, ბავშვთა მასაჟი და ტაილანდური მასაჟი.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-year">2010</span>
-                        <p>რეფლექსოთერაპიის ცენტრში გავიარე თერაპიული სწავლება რომელიც მოიცავს აღმოსავლურ-რეფლექსოთერაპიას და აკუპუნქტურას.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-year">2012</span>
-                        <p>მონაწილეობა მივიღე საქართველოში ჩინეთის სახრობს მიერ დაფინანსებულ პროგრამაში, რაც გულისხმობს პრაქტიკულ და თეორიულ ჯენზიუ თერაპიის სხვადასხვა მიმართულების სწავლებას. სწავლება მიმდინარეობდა ჩინეთში, ტაიუენის პროვინციაში.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-year">2017</span>
-                        <p>უწყვეტი სამედიცინო განათლების პროგრამით შევისწავლე შეფუების საწინააღმდეგო თერაპია და ლიმფის მანუალური დრენაჟი.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-year">2018</span>
-                        <p>შევისწავლე იაპონური მანუალური თერაპია "იუმეიჰო".</p>
-                    </div>
-                </div>
-                <div class="about-experience">
-                    <h3>სამუშაო გამოცდილება</h3>
-                    <p>განათლების პარალელურად ვმუშაობდი სხვადასხვა სარეაბილიტაციო ცენტრებსა და კლინიკებში:</p>
-                    <ul class="experience-list">
-                        <li>სანატორიუმ "კოხხიდაში"</li>
-                        <li>ირინა ბობინაურის ესთეტიკური მედიცინის კლინიკა</li>
-                        <li>ასოციაცია "ანტიკა"</li>
-                        <li>"სპენსერ კლინიკა"</li>
-                        <li>პოლისტიკური ცენტრი "სარკე"</li>
-                        <li>კლინიკა "მედისონი"</li>
-                    </ul>
-                    <p>გარდა ამისა მაქვს პრაქტიკული გამოცდილება კერძო პაციენტებთან.</p>
-                    <p class="about-highlight">ამ წლების განმავლობაში დავაგროვე საკმაო ცოდნა და გამოცდილება.</p>
-                </div>
-            </div>
+      <!-- Enfoques -->
+      <section class="enfoques" id="enfoques">
+        <div class="encabezado">
+          <p class="etiqueta revelar">Enfoques de tratamiento</p>
+          <h2 class="titulo revelar">Lo que hago por tu cuerpo</h2>
         </div>
-    </section>
+        <ol class="lista-enfoques">
+          <li class="revelar">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4v40M18 9h12M17 17h14M18 25h12M17 33h14M18 41h12" /></svg>
+            <div>
+              <h3>Dolor de espalda y cuello</h3>
+              <p>Terapia manual y ejercicio para lumbalgia, cervicalgia, hernias discales y malas posturas del trabajo.</p>
+            </div>
+          </li>
+          <li class="revelar">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M30 6c-4 8-12 10-12 18s6 8 4 18M14 42h14M26 22l10-4" /><circle cx="33" cy="9" r="4" /></svg>
+            <div>
+              <h3>Rehabilitación deportiva</h3>
+              <p>Esguinces, lesiones de rodilla y hombro, readaptación al deporte y prevención de recaídas.</p>
+            </div>
+          </li>
+          <li class="revelar">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40c-9-5-16-11-16-20a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 9-7 15-16 20Z" /><path d="M12 24h7l3-5 4 9 3-4h7" /></svg>
+            <div>
+              <h3>Recuperación neuromuscular</h3>
+              <p>Secuelas de ACV, equilibrio, coordinación y marcha para recuperar autonomía en el día a día.</p>
+            </div>
+          </li>
+          <li class="revelar">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 42V28l-4-8 6-12M32 42V28l4-8-6-12M18 20h12" /></svg>
+            <div>
+              <h3>Postoperatorios</h3>
+              <p>Cirugías de rodilla, cadera, hombro y columna, con un regreso progresivo y seguro a la actividad.</p>
+            </div>
+          </li>
+          <li class="revelar">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="10" r="5" /><path d="M24 15v13m0 0-8 14m8-14 8 14M12 22l12-3 12 3" /></svg>
+            <div>
+              <h3>Pilates clínico y postura</h3>
+              <p>Fortalecimiento del centro del cuerpo, flexibilidad y control postural en sesiones guiadas.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="header-jp">施術</span>
-                <h2>მომსახურეობა</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" id="yumeiho">
-                    <div class="service-image">
-                        <img src="images/assets/image2.jpg" alt="იუმეიჰო თერაპია">
-                        <span class="service-number">01</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>იუმეიჰო თერაპია</h3>
-                        <p>იუმეიჰო - იაპონური მანუალური თერაპია, რომელიც აერთიანებს შიაცუსა და მანიპულაციურ ტექნიკებს. ის აღადგენს სხეულის ენერგეტიკულ ბალანსს და გამოიყენება ხერხემლისა და სახსრების პრობლემების, როგორიცაა თიაქარი და სქოლიოზი, ასევე სტრესისა და ქრონიკული დაღლილობის სამკურნალოდ.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="kinezitherapy">
-                    <div class="service-image">
-                        <img src="images/assets/image4.jpeg" alt="კინეზითერაპია">
-                        <span class="service-number">02</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>კინეზითერაპია</h3>
-                        <p>მკურნალობა ფიზიკური ვარჯიშების გამოყენებით, რომელიც მოიცავს: წონასწორობისა და კოორდინაციის ვარჯიშებს. წინაღმდეგობით, აქტიურ, პასიურ და პასიურ-აქტიურ ვარჯიშებს. სპეციალურ ვარჯიშებს საგნებით და საგნებზე. კინეზითერაპია ასევე აერთიანებს სუნთქვით ვარჯიშებს, ტაიჩის, იოგასა და წყლის პროცედურებს.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="manual">
-                    <div class="service-image">
-                        <img src="images/assets/image5.jpg" alt="მანუალური თერაპია">
-                        <span class="service-number">03</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>მანუალური თერაპია</h3>
-                        <p>მანუალური თერაპია არის სამკურნალო მეთოდი, რომელიც მიზნად ისახავს ხერხემლის, სახსრებისა და კუნთოვანი აპარატის პათოლოგიების კორექციას. მიუხედავად იმისა, რომ არ არის უნივერსალური, მისი მაღალი ეფექტურობის გამო, მან მნიშვნელოვნად შეამცირა ფარმაკოლოგიური პრეპარატების გამოყენება ოსტეოქონდროზის მკურნალობისას.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="jenziu">
-                    <div class="service-image">
-                        <img src="images/assets/image8.jpeg" alt="ჯენ-ძიუ თერაპია">
-                        <span class="service-number">04</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>ჯენ-ძიუ თერაპია</h3>
-                        <p>რეფლექსოთერაპიის უძველესი მეთოდი (ჩინური მედიცინა). ორგანიზმზე ზემოქმედება ბიოლოგიურად აქტიურ წერტილებში ნერვული სისტემის დაავადებები, ხერხემლის ოსტეოქონდროზი, ნევროლოგიური სინდრომები. გამოიყენება იმ შემთხვევებში, როდესაც ნეიროქირურგიული ჩარევა საჭირო არ არის.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="vacuum">
-                    <div class="service-image">
-                        <img src="images/assets/image6.jpg" alt="ვაკუუმ თერაპია">
-                        <span class="service-number">05</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>ვაკუუმ თერაპია</h3>
-                        <p>სამკურნალო მასაჟი, რომელიც გამოიყენება დაავადებებისა და ტრავმების პროფილაქტიკისთვის. დაფუძნებულია რეფლექტორულ მექანიზმზე, რომელიც ქილაში ვაკუუმით კანის რეცეპტორების გაღიზიანებით აქტიურდება. რეკომენდებულია ხერხემლის ოსტეოქონდროზის და გავა-წელის რადიკულიტის დროს. ააქტიურებს ნივთიერებათა ცვლის პროცესს, აუმჯობესებს კანის სუნთქვას, ზრდის სახსრებისა და ხერხემლის მოძრაობას და ხსნის კუნთების დაჭიმულობას.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="acupressure">
-                    <div class="service-image">
-                        <img src="images/assets/image5.jpg" alt="აკუპრესურა">
-                        <span class="service-number">06</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>აკუპრესურა</h3>
-                        <p>აკუპრესურა ტრადიციული ჩინური მედიცინის უძველესი არანემსოვანი მეთოდია ("ნემსების გარეშე აკუპუნქტურა"). ის გულისხმობს იმავე ბიოლოგიურად აქტიურ წერტილებზე ზეწოლას, რათა განბლოკოს ენერგიის ნაკადი (Qi), მოიხსნას კუნთების დაძაბულობა და გაუმჯობესდეს სისხლის მიმოქცევა. ზეწოლა ასტიმულირებს ენდორფინების (ბუნებრივი ტკივილგამაყუჩებლები) გამოყოფას.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="acupuncture">
-                    <div class="service-image">
-                        <img src="images/assets/image7.jpg" alt="აკუპუნქტურა">
-                        <span class="service-number">07</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>აკუპუნქტურა</h3>
-                        <p>აკუპუნქტურა ნემსით ჩხვლეტით მკურნალობაა, როდესაც მკურნალობის მიზნით ორგანიზზმზე ზემოქმედება ხდება ნემსით ე.წ. ბიოლოგიურ აქტიურ წერტილში. აკუპუნქტურა არის თერაპიის ერთერთი სახე აღმოსავლურ მედიცინაში. ეს მეთოდი არა მხოლოდ კურნავს დაავადებებს ასევე მისით შესაძლებელია დაავადების პრევენცია. მედიცინის ისტორიაში ცნობილ სამკურნალო საშუვალებებს შორის უძველესია, იგი თავისი არსებობის 5000 წელს ითვლის.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="infant">
-                    <div class="service-image">
-                        <img src="images/babyfoot.jpg" alt="ჩვილის მასაჟი">
-                        <span class="service-number">08</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>ჩვილის მასაჟი</h3>
-                        <p>ჩვილის ყოველდღიური მასაჟი ხელს უწყობს მის სწორ განვითარებას და ტანდეგობის ჩამოყალიბებას. ბავშვის ორგანიზმის განვითარებას. რეგულარული მასაჟისა და ვარჯიშების წყალობით ჯანმრთელი ბავშვის სხეული მეტად სრუყოფილი ხდება, ხოლო განვითარებას ჩამორჩენილი ბავშვი მალე დაეწევა თანატოლებს.</p>
-                    </div>
-                </div>
-                <div class="service-card" id="scoliosis">
-                    <div class="service-image">
-                        <img src="images/Scoliosis.jpg" alt="სქოლიოზის თერაპია">
-                        <span class="service-number">09</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>სქოლიოზის თერაპია</h3>
-                        <p>სქოლიოზი არის ძვლის დეფორმაცია ანუ ხერხემლის გამრუდება ფრონტალურ სიბრტყეში. იგი არის გენეტიკური, ან/და შეძენილი. მისი გამომწვევი ძირითადი მიზეზი არის მენჯ–ბარძაყის სახსრის არასწორი განვითარება, კიდურების ძვლების არათანაბარობა 1 სმ-ზე მეტი, ზედმეტი დატვირთვა ან არასწორი ჯდომა, დიდი მნიშვნელობა აქვს ჯდომის პოზას. I ხარისხის დროს შეიძლება ვილაპარაკოთ ტანდეგობის დარღვევაზე. I და II მეორე ხარისხის დროს გამოხატულია ასიმეტრია ბეჭების დონეზე. მკურნალობის შედეგად შეიძლება ხარისხის შემცირება ერთით, ხოლო სოლისებრი სქოლიოზის ალაგება შესაძლებელია ტანდეგობის ხარჯზე.</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Trayectoria -->
+      <section class="trayectoria" id="trayectoria">
+        <div class="encabezado">
+          <p class="etiqueta revelar">Experiencia laboral</p>
+          <h2 class="titulo revelar">Una trayectoria que se mueve contigo</h2>
         </div>
-    </section>
+        <div class="linea-tiempo" data-linea-tiempo>
+          <span class="linea-tiempo__eje" aria-hidden="true"><span data-eje-progreso></span></span>
+          <article class="hito revelar">
+            <p class="hito__fecha">2023 — Actualidad</p>
+            <h3>Fisioterapeuta líder</h3>
+            <p class="hito__lugar">Centro de Rehabilitación Movimiento Vital · Popayán</p>
+            <p>Coordino un equipo de cuatro profesionales y atiendo casos de dolor crónico y postoperatorios. Implementé protocolos de evaluación que redujeron en un 30 % el tiempo de recuperación promedio.</p>
+          </article>
+          <article class="hito revelar">
+            <p class="hito__fecha">2020 — 2023</p>
+            <h3>Fisioterapeuta deportiva</h3>
+            <p class="hito__lugar">Club Deportivo Andino · Cauca</p>
+            <p>Acompañé a deportistas de fútbol y atletismo en prevención de lesiones, atención en competencia y readaptación al entrenamiento.</p>
+          </article>
+          <article class="hito revelar">
+            <p class="hito__fecha">2018 — 2020</p>
+            <h3>Fisioterapeuta asistencial</h3>
+            <p class="hito__lugar">IPS Salud en Equilibrio · Popayán</p>
+            <p>Rehabilitación de pacientes hospitalizados y ambulatorios, con énfasis en recuperación neurológica y respiratoria.</p>
+          </article>
+          <article class="hito revelar">
+            <p class="hito__fecha">2017 — 2018</p>
+            <h3>Práctica clínica</h3>
+            <p class="hito__lugar">Unidad de Rehabilitación Integral</p>
+            <p>Primer contacto con pacientes de traumatología y adulto mayor, bajo supervisión de especialistas.</p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="testimonials-container">
-            <h2>რას ამბობენ პაციენტები</h2>
-            <div class="slider-wrapper">
-                <div class="testimonials-slider" id="testimonialSlider">
-                    <div class="testimonial-item">
-                        <div class="quote-mark">"</div>
-                        <p>პროფესიონალი თერაპევტი, რომელმაც დამეხმარა ზურგის ტკივილის მოხსნაში. გირჩევთ ყველას!</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">ნ</div>
-                            <div class="author-info">
-                                <strong>ნინო მ.</strong>
-                                <span>პაციენტი</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="quote-mark">"</div>
-                        <p>იუმეიჰო თერაპიამ სრულიად შემიცვალა ცხოვრება. ქრონიკული ტკივილი გაქრა რამდენიმე სეანსის შემდეგ.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">გ</div>
-                            <div class="author-info">
-                                <strong>გიორგი კ.</strong>
-                                <span>პაციენტი</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="quote-mark">"</div>
-                        <p>საუკეთესო სპეციალისტი თბილისში. მადლობა გივის პროფესიონალიზმისთვის!</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">მ</div>
-                            <div class="author-info">
-                                <strong>მარიამ ბ.</strong>
-                                <span>პაციენტი</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="quote-mark">"</div>
-                        <p>აკუპუნქტურის კურსის შემდეგ თავის ტკივილი საერთოდ აღარ მაწუხებს. ძალიან კმაყოფილი ვარ!</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">ა</div>
-                            <div class="author-info">
-                                <strong>ანა დ.</strong>
-                                <span>პაციენტი</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="quote-mark">"</div>
-                        <p>ჩემი შვილი სქოლიოზის მკურნალობას გადის გივისთან. შედეგი თვალსაჩინოა, მადლობა!</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">თ</div>
-                            <div class="author-info">
-                                <strong>თამარ ლ.</strong>
-                                <span>პაციენტი</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="quote-mark">"</div>
-                        <p>მანუალურმა თერაპიამ დამეხმარა კისრის ტკივილის მოხსნაში. რეკომენდაციას ვუწევ ყველას!</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">დ</div>
-                            <div class="author-info">
-                                <strong>დავით შ.</strong>
-                                <span>პაციენტი</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-controls">
-                <button class="slider-btn prev" onclick="moveSlider(-1)">&#10094;</button>
-                <div class="slider-dots" id="sliderDots"></div>
-                <button class="slider-btn next" onclick="moveSlider(1)">&#10095;</button>
-            </div>
+      <!-- Formación -->
+      <section class="formacion" id="formacion">
+        <div class="encabezado">
+          <p class="etiqueta revelar">Formación y certificaciones</p>
+          <h2 class="titulo revelar">Aprender nunca se detiene</h2>
         </div>
-    </section>
+        <div class="formacion__columnas">
+          <ul class="estudios">
+            <li class="revelar"><span>2021</span><b>Especialización en Rehabilitación Deportiva</b></li>
+            <li class="revelar"><span>2017</span><b>Pregrado en Fisioterapia</b></li>
+          </ul>
+          <ul class="sellos revelar" aria-label="Certificaciones">
+            <li>Punción seca</li>
+            <li>Kinesiotaping</li>
+            <li>Pilates clínico</li>
+            <li>Terapia manual ortopédica</li>
+            <li>Ejercicio terapéutico</li>
+            <li>Primeros auxilios y RCP</li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-info">
-                <h2>გაქვთ კითხვები?</h2>
-                <p>დამიკავშირდი და მიიღე უფასო კონსულტაცია</p>
-                <a href="tel:+995593788626" class="btn">უფასო კონსულტაცია</a>
-            </div>
-        </div>
-    </section>
+      <!-- Testimonio -->
+      <section class="testimonio">
+        <blockquote class="revelar">
+          <p>“Llegué sin poder agacharme por el dolor lumbar. En seis semanas volví a correr. Siempre me explicó qué estábamos haciendo y por qué.”</p>
+          <footer>Andrés M. · paciente de rehabilitación</footer>
+        </blockquote>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-top">
-                    <div class="footer-logo-section">
-                        <a href="#home" class="logo">
-                            <img src="images/assets/Group 31.svg" alt="Logo">
-                        </a>
-                        <div class="footer-icons">
-                            <a href="https://www.facebook.com/givi.laliasshvili" target="_blank" class="social-icon"><img src="images/assets/icons/facebook.svg" alt="Facebook"></a>
-                            <a href="https://www.instagram.com/giko.laliashvili/" target="_blank" class="social-icon"><img src="images/assets/icons/instagram.svg" alt="Instagram"></a>
-                            <a href="https://wa.me/995593788626" target="_blank" class="social-icon"><img src="images/assets/icons/whatsapp.svg" alt="WhatsApp"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-services">
-                    <div class="footer-col">
-                        <a href="#yumeiho">იუმეიჰო თერაპია</a>
-                        <a href="#kinezitherapy">კინეზითერაპია</a>
-                        <a href="#manual">მანუალური თერაპია</a>
-                    </div>
-                    <div class="footer-col">
-                        <a href="#jenziu">ჯენ-ძიუ თერაპია</a>
-                        <a href="#vacuum">ვაკუუმ თერაპია</a>
-                        <a href="#acupressure">აკუპრესურა</a>
-                    </div>
-                    <div class="footer-col">
-                        <a href="#acupuncture">აკუპუნქტურა</a>
-                        <a href="#infant">ჩვილის მასაჟი</a>
-                        <a href="#scoliosis">სქოლიოზის თერაპია</a>
-                    </div>
-                </div>
-                <hr class="footer-line">
-                <p class="footer-copyright">&copy; 2025 გივი ლალიაშვილი</p>
-            </div>
+      <!-- Contacto -->
+      <section class="contacto" id="contacto">
+        <div class="contacto__texto">
+          <p class="etiqueta revelar">Contacto</p>
+          <h2 class="titulo revelar">Demos el primer paso juntos.</h2>
+          <p class="revelar">Escríbeme y agendamos tu valoración. Atiendo en consultorio y a domicilio.</p>
+          <div class="hero__acciones revelar">
+            <a class="boton boton--lleno" data-marca="whatsapp" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+            <a class="boton boton--linea" data-marca="hojaDeVida" href="cv/hoja-de-vida.pdf" download>Descargar hoja de vida</a>
+          </div>
         </div>
+        <ul class="contacto__datos revelar">
+          <li><span>Teléfono</span><a data-marca="telefono" href="#">+57 300 000 0000</a></li>
+          <li><span>Correo</span><a data-marca="correo" href="#">contacto@tudominio.co</a></li>
+          <li><span>Instagram</span><a data-marca="instagram" href="#" target="_blank" rel="noopener">@tu.usuario</a></li>
+          <li><span>Consultorio</span><p data-marca-texto="direccion">Cra. 9 # 00-00, Popayán</p></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>© <span data-anio></span> Valeria Castaño · Fisioterapeuta</p>
+      <p data-marca-texto="CREDITO_DESARROLLO">Experiencia digital · BWL &amp; SOFT</p>
     </footer>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/995593788626" target="_blank" class="whatsapp-float">
-        <img src="images/assets/icons/whatsapp.svg" alt="WhatsApp">
-        <span class="whatsapp-tooltip">დამიკავშირდი</span>
-    </a>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
